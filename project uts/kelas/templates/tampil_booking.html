@@ -1,0 +1,24 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block kontent %}
+<div class="container">
+<h2 class="text-center">Tabel Booking</h2>
+<table border="1" class="table table-primary table-striped">
+    <tr>  
+        <th>Kode Wisata</th>
+        <th>Nama pengunjung</th>
+        <th>Jumlah tiket</th> 
+        <th>Tanggal keberangkatan</th>
+        <th>Total</th>
+    </tr>
+{% for Transaksi in transaksis %}
+<tr>
+    <td>{{ Barang.kodewisata }}</td>
+    <td>{{ Barang.nama_pengunjung }}</td>
+    <td>{{ Barang.jumlah_tiket }}</td>
+    <td>{{ Barang.tanggal_keberangkatan }}</td>
+    <td>{{ Barang.total }}</td>
+</tr>
+{% endfor %}
+</table></div>
+{% endblock %}

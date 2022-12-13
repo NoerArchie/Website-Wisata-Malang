@@ -1,0 +1,61 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block kontent %}
+       <div id="carouselExampleControls" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="{% static 'img/alun-alun.png'%}" alt="alun-alun.png" width="500" height="800" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'img/kampung-pelangi.png'%}" alt="kampung-pelangi.png" width="500" height="800" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'img/hidden.png'%}" alt="hidden.png" width="500" height="800" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      </div>
+        <h2>Kota Malang Kota Penuh Keindahan</h2>
+        <center><a href="/about"<button type="button" class="btn btn-outline-dark" id="btn-dark">About</button></a></center>
+      </div>
+    </div>
+  </section>
+
+</tr>
+<tr class="col">
+  <td>
+    <a href="#">www.wisatamalang.com</a>
+  </td>    
+</tr>
+<tr class="col">
+  <td>
+    <a href="#">081 234 567 890</a>
+  </td>
+</tr>
+<tr class="col">
+  <td>
+    <a href="#">Help</a>
+  </td>
+</tr>
+</table>
+<nav class="navbar" style="background-color: #0026ff;">
+
+</nav>
+
+
+
+  </body>
+</html>
+
+{% endblock %}
